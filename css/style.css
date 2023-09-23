@@ -1,0 +1,1499 @@
+/* PC→TB→SPの順でスタイルを記載*/
+@media screen and ( min-width:1440px ){
+    body{
+        width: 100%;
+        height: auto;
+        margin: 0 auto;
+    }
+    body h2{
+        font-family: "Montserrat ExtraBold";
+        font-weight: normal;
+        font-size: 32px;
+        letter-spacing: 0.07em;
+        line-height: 32px;
+        text-align: left;
+        color: #333;
+    }
+    body p{
+        font-family: "Noto Sans JP";
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 32px;
+        text-align: left;
+        color: #333;
+
+    }
+    body #more{
+        display: block;
+        width: 160px;
+        height: 36px;
+        background: #000;
+         font-family: "Montserrat Medium";
+         font-weight: bold;
+         font-size: 12px;
+         letter-spacing: 0.02em;
+         line-height: 36px;
+         text-align: center;
+         color: #fff;
+    }
+    header {
+        position: relative;
+        width: 1440px;
+        height: 740px;
+        margin: 0 auto;
+    }
+    header::before{
+        position: absolute;
+        top: 0;
+        right: 0;
+        content:"";
+        width: 780px;
+        height: 740px;
+        background-color: #222222;
+        z-index: -1;
+    }
+    /*============================
+#Header-content
+============================*/
+    header div#Header-content {
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: flex;
+        width: 100%;
+        height: 90px;
+        z-index: 99;
+    }
+
+    header div#Header-content picture {
+        display: block;
+        width: 260px;
+        height: 28.2px;
+        margin: 30px 0 30px 58px;
+    }
+
+    header div#Header-content picture source {
+        display: block;
+        width: 1100px;
+    }
+
+    header div#Header-content picture img {
+        display: block;
+        width: 100%;
+    }
+
+ /*============================
+#ハンバーガーの挙動
+============================*/
+
+    header div {
+        position: absolute;
+        top: 35px;
+        right: 58px;
+        width: 61px;
+        height: 13px;
+        margin: 0;
+        z-index: 110;
+    }
+
+   
+    header div div#Menu {
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: block;
+        width: 22px;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        margin: 0;
+    }
+
+    header div div#Menu span {
+        position: absolute;
+        width: 22px;
+        height: 2px;
+        background-color: #FFFFFF;
+        transition: all .3s
+    }
+
+    header div div#Menu span:nth-child(1){
+        top: 0;
+    }
+    header div div#Menu span:nth-child(2){
+        top: 5px;
+    }
+    header div div#Menu span:nth-child(3){
+        top: 10px;
+    }
+
+     header div div#Menu span.active:nth-child(1) {
+         top: 5px;
+         transform: rotate(215deg);
+     }
+
+     header div div#Menu span.active:nth-child(2) {
+         display: none;
+     }
+
+     header div div#Menu span.active:nth-child(3) {
+         top: 5px;
+         transform: rotate(-215deg);
+     }
+
+
+    header div span#text {
+        position: absolute;
+        top: 0;
+        left: 22px;
+        width: 39px;
+        display: block;
+        font-family: "Montserrat ExtraBold";
+        font-weight: normal;
+        font-size: 10px;
+        letter-spacing: 0.01em;
+        line-height: 13px;
+        text-align: center;
+        color: #fff;
+}
+
+ /*============================
+ここまで
+============================*/
+
+    header picture {}
+
+    header picture source {}
+
+    header picture img {}
+
+    /*============================
+#Header-text
+============================*/
+    header div#Header-text {
+        position: absolute;
+        top: 219px;
+        right: 194px;
+        z-index: 50;
+        width: 292px;
+        height: 322px;
+    }
+
+    header div#Header-text p {
+        font-family: "Montserrat Medium";
+        font-weight: bold;
+        font-size: 20px;
+        line-height: 17px;
+        text-align: left;
+        color: #fff;
+
+    }
+
+    header div#Header-text h1 {
+        font-family: "Montserrat ExtraBold";
+        font-weight: normal;
+        font-size: 72px;
+        line-height: 86px;
+        text-align: left;
+        color: #fff;
+
+    }
+ /*============================
+#ハンバーガーと連動
+============================*/
+    header nav {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(34, 34, 34, 0.6);
+        z-index: 100;
+        opacity: 0;
+        transition: all .3s;
+    }
+
+    header nav.opacity{
+        opacity: 1;
+    }
+
+    header nav ul {
+        position: absolute;
+        right: 0;
+        width: 520px;
+        height: 100vh;
+        background: rgba(34, 34, 34, 0.95);
+        padding: 180px 200px calc( 100vh - 506px );
+        transform: translateX(520px);
+        transition: all .3s;
+    }
+    header nav ul.positionX{
+        transform: translateX(0);
+    }
+    header nav ul li#menu-logo {
+        width: 118px;
+        height: 52px;
+        padding: 1px;
+    }
+
+     header nav ul li img {
+        display: block;
+         width: 42px;
+         height: 45px;
+         margin: auto;
+     }
+
+    header nav ul li {
+        width: 118px;
+        height: 52px;
+       padding: 1px;
+    }
+
+    header nav ul li a {
+        display: block;
+        height: 24px;
+         font-family: "Montserrat ExtraBold";
+         font-weight: normal;
+         font-size: 20px;
+         letter-spacing: 0.07em;
+         line-height: 24px;
+         text-align: left;
+         color: #fff;
+         white-space: nowrap;
+         margin-top: 29px; 
+         text-align: center;
+    }
+
+     /*============================
+ここまで
+============================*/
+
+    main {
+        width: 100%;
+        height: auto;
+        margin: 0 auto;
+    }
+
+    main .content{
+        width: 100%
+    }
+    main .content-background-color{
+        background-color: #f0f0f0;
+    }
+    /*============================
+#content1
+============================*/
+    main div#content1 {
+        position: relative;
+        width: 1440px;
+        height: 627px;
+        margin: 0 auto;
+    }
+
+    main div#content1 #inner-content{
+        position: absolute;
+        left: 170px;
+         width: 1100px;
+         height: 607px;
+         background-image: url("../imgs/PC-img/about-img.jpg");
+         margin: 120px auto 0;
+         padding: 1px;
+         z-index: 10;
+    }
+
+    main div#content1 div div{
+        position: absolute;
+        top: 110px;
+        left: 50px;
+        width: 590px;
+        height: 387px;
+        background: rgba(255, 255, 255, 0.95);
+        padding: 1px 30px;
+    }
+
+    main div#content1 div div h2 {
+         margin: 50px 0 30px 0;
+    }
+
+    main div#content1 div div p {
+        height: 152px;
+        margin: 0 0 30px 0;
+    }
+
+    main div#content1 div div a{
+       
+    }
+
+    /*============================
+#content2
+============================*/
+    main div#content2 {
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        width: 1440px;
+        height: auto;
+        margin: auto;
+        padding: 100px 170px 1px;
+        z-index: 10;
+    }
+
+    main div#content2 div {
+        width: 520px;
+        height: 530px;
+        margin: 80px 0 60px;
+    }
+
+    main div#content2 div h2 {
+       height: 39px;
+       line-height: 39px;
+       margin: 0 0 30px 0;
+    }
+
+    main div#content2 div picture {}
+
+    main div#content2 div picture source {}
+
+    main div#content2 div picture img {}
+
+    main div#content2 div nav {}
+
+    main div#content2 div nav span {  
+        display: block; 
+      height: 21px;
+      font-family: YuGothic;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 21px;
+      text-align: left;
+      color: #333;
+      margin: 27px 0 28px 0;
+    }
+
+    main div#content2 div nav a {
+    }
+
+    /*============================
+#content3
+============================*/
+    main div#content3 {
+        width: 1100px;
+        height: 348px;
+        margin: 60px auto;
+    }
+
+    main div#content3 h2 {}
+
+    main div#content3 nav {
+        width: 700px;
+        height: 309px;
+        margin: 18px 0 0 400px;
+    }
+
+    main div#content3 nav dl {
+        height: 81px;
+        border-bottom: solid 1px #DDDDDD;
+    }
+
+    main div#content3 nav dl dd {
+        font-family: "Montserrat Medium";
+        font-weight: bold;
+        font-size: 10px;
+        letter-spacing: 0.02em;
+        line-height: 32px;
+        text-align: left;
+        color: #cecece;
+
+    }
+    main div#content3 nav dl dt {
+        height: 19px;
+        font-family: YuGothic;
+        font-weight: bold;
+        font-size: 14px;
+        letter-spacing: 0em;
+        line-height: 19px;
+        text-align: left;
+        color: #333;
+    }
+    main div#content3 nav a {
+        margin: 30px 0 0 540px;
+    }
+
+    /*============================
+#content4
+============================*/
+    main div#content4 {
+        display: flex;
+        flex-wrap: nowrap;
+        width: 1100px;
+        height: 570px;
+        padding: 1px;
+        margin: auto;
+    }
+
+    main div#content4 div {
+        width: 440px;
+        margin: 60px 80px 120px 0;
+    }
+
+    main div#content4 div h2 {
+        margin: 72px 0 30px 0;
+    }
+
+    main div#content4 div p {
+        height: 112px;
+        margin-bottom: 30px;
+    }
+
+    main div#content4 div a {}
+
+    main div#content4 picture {
+        width: 580px;
+        margin: 60px 0 120px 0;
+    }
+
+    main div#content4 picture source {}
+
+    main div#content4 picture img {}
+
+    footer {
+        width: 100%;
+        height: 48px;
+        background-color: #525252;
+        padding: 1px;
+    }
+    footer p{
+        width: 100%;
+        height: 14px;
+        font-family: "Montserrat Medium";
+        font-weight: 500;
+        font-size: 10px;
+        letter-spacing: 0.02em;
+        line-height: 14px;
+        text-align: center;
+        color: #fff;
+        margin: 17px 0;
+    }
+}
+@media screen and ( min-width:768px) and ( max-width: 1439px ){
+    body {
+        width: 100%;
+        height: auto;
+        margin: 0 auto;
+    }
+
+    body h2 {
+       font-family: "Montserrat ExtraBold";
+       font-weight: normal;
+       font-size: 32px;
+       letter-spacing: 0.07em;
+       text-align: left;
+       color: #333;
+
+    }
+
+    body p {
+      font-family: YuGothic;
+      font-weight: 500;
+      font-size: 16px;
+      text-align: left;
+      color: #333;
+
+    }
+
+    body #more {
+        display: block;
+        width: 160px;
+        height: 36px;
+        background: #000;
+        font-family: "Montserrat Medium";
+        font-weight: bold;
+        font-size: 12px;
+        letter-spacing: 0.02em;
+        line-height: 36px;
+        text-align: center;
+        color: #fff;
+    }
+
+    header {
+        position: relative;
+        width: 768px;
+        height: 1024px;
+        margin: 0 auto;
+    }
+
+    header::before {
+        position: absolute;
+        top: 0;
+        right: 0;
+        content: "";
+        width: 562px;
+        height: 1024px;
+        background-color: #222222;
+        z-index: -1;
+    }
+
+    /*============================
+#Header-content
+============================*/
+    header div#Header-content {
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: flex;
+        width: 100%;
+        height: 90px;
+        z-index: 99;
+    }
+
+    header div#Header-content picture {
+        display: block;
+        width: 260px;
+        height: 28.2px;
+        margin: 34px 0 30px 30px;
+    }
+
+    header div#Header-content picture source {
+        display: block;
+        width: 1100px;
+    }
+
+    header div#Header-content picture img {
+        display: block;
+        width: 100%;
+    }
+
+    /*============================
+#ハンバーガーの挙動
+============================*/
+
+    header div {
+        position: absolute;
+        top: 37px;
+        right: 30px;
+        width: 61px;
+        height: 13px;
+        margin: 0;
+        z-index: 110;
+    }
+
+
+    header div div#Menu {
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: block;
+        width: 22px;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        margin: 0;
+    }
+
+    header div div#Menu span {
+        position: absolute;
+        width: 22px;
+        height: 2px;
+        background-color: #FFFFFF;
+        transition: all .3s
+    }
+
+    header div div#Menu span:nth-child(1) {
+        top: 0;
+    }
+
+    header div div#Menu span:nth-child(2) {
+        top: 5px;
+    }
+
+    header div div#Menu span:nth-child(3) {
+        top: 10px;
+    }
+
+    header div div#Menu span.active:nth-child(1) {
+        top: 5px;
+        transform: rotate(215deg);
+    }
+
+    header div div#Menu span.active:nth-child(2) {
+        display: none;
+    }
+
+    header div div#Menu span.active:nth-child(3) {
+        top: 5px;
+        transform: rotate(-215deg);
+    }
+
+
+    header div span#text {
+        position: absolute;
+        top: 0;
+        left: 22px;
+        width: 39px;
+        display: block;
+        font-family: "Montserrat ExtraBold";
+        font-weight: normal;
+        font-size: 10px;
+        letter-spacing: 0.01em;
+        line-height: 13px;
+        text-align: center;
+        color: #fff;
+    }
+
+    /*============================
+ここまで
+============================*/
+
+    header picture {}
+
+    header picture source {}
+
+    header picture img {}
+
+    /*============================
+#Header-text
+============================*/
+    header div#Header-text {
+        position: absolute;
+        top: 330px;
+        right: 80px;
+        z-index: 50;
+        width: 292px;
+        height: 322px;
+    }
+
+    header div#Header-text p {
+       font-family: YuGothic;
+       font-weight: bold;
+       font-size: 16px;
+       letter-spacing: 0.06em;
+       line-height: 21px;
+       text-align: left;
+       color: #fff;
+
+    }
+
+    header div#Header-text h1 {
+       font-family: "Montserrat ExtraBold";
+       font-weight: normal;
+       font-size: 56px;
+       letter-spacing: 0.06em;
+       line-height: 53px;
+       text-align: left;
+       color: #fff;
+
+    }
+
+    /*============================
+#ハンバーガーと連動
+============================*/
+    header nav {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(34, 34, 34, 0.6);
+        z-index: 100;
+        opacity: 0;
+        transition: all .3s;
+    }
+
+    header nav.opacity {
+        opacity: 1;
+    }
+
+    header nav ul {
+        position: absolute;
+        right: 0;
+        width: 520px;
+        height: 100vh;
+        background: rgba(34, 34, 34, 0.95);
+        padding: 180px 200px calc(100vh - 506px);
+        transform: translateX(520px);
+        transition: all .3s;
+    }
+
+    header nav ul.positionX {
+        transform: translateX(0);
+    }
+
+    header nav ul li#menu-logo {
+        width: 118px;
+        height: 52px;
+        padding: 1px;
+    }
+
+    header nav ul li img {
+        display: block;
+        width: 42px;
+        height: 45px;
+        margin: auto;
+    }
+
+    header nav ul li {
+        width: 118px;
+        height: 52px;
+        padding: 1px;
+    }
+
+    header nav ul li a {
+        display: block;
+        height: 24px;
+        font-family: "Montserrat ExtraBold";
+        font-weight: normal;
+        font-size: 20px;
+        letter-spacing: 0.07em;
+        line-height: 24px;
+        text-align: left;
+        color: #fff;
+        white-space: nowrap;
+        margin-top: 29px;
+        text-align: center;
+    }
+
+    /*============================
+ここまで
+============================*/
+
+    main {
+        width: 100%;
+        height: auto;
+        margin: 0 auto;
+    }
+
+    main .content {
+        width: 100%
+    }
+
+    main .content-background-color {
+        background-color: #f0f0f0;
+    }
+
+    /*============================
+#content1
+============================*/
+    main div#content1 {
+        position: relative;
+        width: 768px;
+        height: 479px;
+        margin: 0 auto;
+    }
+
+    main div#content1 #inner-content {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        background-image: url("../imgs/TB-img/about-img.jpg");
+        margin: 120px auto 0;
+        padding: 1px;
+        z-index: 10;
+    }
+
+    main div#content1 div div {
+        position: absolute;
+        top: 60px;
+        left: 89px;
+        width: 590px;
+        height: 357px;
+        background: rgba(255, 255, 255, 0.95);
+        padding: 1px 30px;
+    }
+
+    main div#content1 div div h2 {
+        height: 39px;
+        line-height: 39px;
+        margin: 40px 0 30px 0;
+    }
+
+    main div#content1 div div p {
+        height: 144px;
+        line-height: 32px;
+        margin: 0 0 30px 0;
+    }
+
+    main div#content1 div div a {}
+
+    /*============================
+#content2
+============================*/
+    main div#content2 {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        width: 708px;
+        height: auto;
+        margin: auto;
+        padding: 100px 0 1px;
+        z-index: 10;
+    }
+
+    main div#content2 div {
+        width: 520px;
+        height: 530px;
+        margin: 80px 0 60px;
+    }
+
+    main div#content2 div h2 {
+        height: 39px;
+        line-height: 39px;
+        margin: 0 0 30px 0;
+    }
+
+    main div#content2 div picture {}
+
+    main div#content2 div picture source {}
+
+    main div#content2 div picture img {}
+
+    main div#content2 div nav {}
+
+    main div#content2 div nav span {
+        display: block;
+        height: 21px;
+        font-family: YuGothic;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 21px;
+        text-align: left;
+        color: #333;
+        margin: 27px 0 28px 0;
+    }
+
+    main div#content2 div nav a {}
+
+    /*============================
+#content3
+============================*/
+    main div#content3 {
+        width: 708px;
+        height: 348px;
+        margin: 60px auto;
+        padding: 1px;
+    }
+
+    main div#content3 h2 {
+        width: 708px;
+    }
+
+    main div#content3 nav {
+        width: 708px;
+        height: 309px;
+        padding: 0;
+        margin: 18px 0 0;
+    }
+
+    main div#content3 nav dl {
+        height: 81px;
+        border-bottom: solid 1px #DDDDDD;
+    }
+
+    main div#content3 nav dl dd {
+        font-family: "Montserrat Medium";
+        font-weight: bold;
+        font-size: 10px;
+        letter-spacing: 0.02em;
+        line-height: 32px;
+        text-align: left;
+        color: #cecece;
+
+    }
+
+    main div#content3 nav dl dt {
+        height: 19px;
+        font-family: YuGothic;
+        font-weight: bold;
+        font-size: 14px;
+        letter-spacing: 0em;
+        line-height: 19px;
+        text-align: left;
+        color: #333;
+    }
+
+    main div#content3 nav a {
+        margin: 30px 0 0;
+    }
+
+    /*============================
+#content4
+============================*/
+    main div#content4 {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0 0;
+        width: 708px;
+        height: 747px;
+        padding: 30px 0;
+        margin: auto;
+    }
+    main div#content4 div{
+        width: 510px;
+        height: auto;
+    }
+    main div#content4 div:nth-child(1){
+        order: 2;
+    }
+    main div#content4 div:nth-child(2) {
+        order: 1;
+    }
+    
+
+    main div#content4 div h2 {
+        margin: 0 0 30px 0;
+        height: 39px;
+        line-height: 39px;
+    }
+
+    main div#content4 div p {
+        height: 112px;
+        margin-bottom: 30px;
+    }
+
+    main div#content4 div a {
+        margin-bottom: 80px;
+    }
+
+    main div#content4 picture {
+        width: 520px;
+        height: 350px;
+        margin: 30px 0 40px 0;
+    }
+
+    main div#content4 picture source {}
+
+    main div#content4 picture img {}
+
+    footer {
+        width: 100%;
+        height: 48px;
+        background-color: #525252;
+        padding: 1px;
+    }
+
+    footer p {
+        width: 100%;
+        height: 14px;
+        font-family: "Montserrat Medium";
+        font-weight: 500;
+        font-size: 10px;
+        letter-spacing: 0.02em;
+        line-height: 14px;
+        text-align: center;
+        color: #fff;
+        margin: 17px 0;
+    }
+}
+@media screen and ( min-width:0 ) and (max-width: 767px ){
+   body {
+       width: 100%;
+       height: auto;
+       margin: 0 auto;
+   }
+
+   body h2 {
+      font-family: "Montserrat ExtraBold";
+      font-weight: normal;
+      font-size: 28px;
+      letter-spacing: 0.07em;
+      text-align: left;
+      color: #333;
+   }
+
+   body p {
+      width: 300px;
+      height: 211px;
+      font-family: YuGothic;
+      font-weight: 500;
+      font-size: 14px;
+      text-align: left;
+      color: #333;
+   }
+
+   body #more {
+       display: block;
+       width: 160px;
+       height: 36px;
+       background: #000;
+       font-family: "Montserrat Medium";
+       font-weight: bold;
+       font-size: 12px;
+       letter-spacing: 0.02em;
+       line-height: 36px;
+       text-align: center;
+       color: #fff;
+   }
+
+   header {
+       position: relative;
+       width: 375px;
+       height: 667px;
+       margin: 0 auto;
+   }
+
+   header::before {
+       position: absolute;
+       top: 0;
+       right: 0;
+       content: "";
+       width: 283px;
+       height: 667px;
+       background-color: #222222;
+       z-index: -1;
+   }
+
+   /*============================
+#Header-content
+============================*/
+   header div#Header-content {
+       position: absolute;
+       top: 0;
+       left: 0;
+       display: flex;
+       width: 100%;
+       height: 90px;
+       z-index: 99;
+   }
+
+   header div#Header-content picture {
+       display: block;
+       width: 260px;
+       height: 28.2px;
+       margin: 19px 0 30px 15px;
+   }
+
+   header div#Header-content picture source {
+       display: block;
+       width: 1100px;
+   }
+
+   header div#Header-content picture img {
+       display: block;
+       width: 100%;
+   }
+
+   /*============================
+#ハンバーガーの挙動
+============================*/
+
+   header div {
+       position: absolute;
+       top: 24px;
+       right: 15px;
+       width: 61px;
+       height: 13px;
+       margin: 0;
+       z-index: 110;
+   }
+
+
+   header div div#Menu {
+       position: absolute;
+       top: 0;
+       left: 0;
+       display: block;
+       width: 22px;
+       display: flex;
+       flex-wrap: wrap;
+       align-items: center;
+       margin: 0;
+   }
+
+   header div div#Menu span {
+       position: absolute;
+       width: 22px;
+       height: 2px;
+       background-color: #FFFFFF;
+       transition: all .3s
+   }
+
+   header div div#Menu span:nth-child(1) {
+       top: 0;
+   }
+
+   header div div#Menu span:nth-child(2) {
+       top: 5px;
+   }
+
+   header div div#Menu span:nth-child(3) {
+       top: 10px;
+   }
+
+   header div div#Menu span.active:nth-child(1) {
+       top: 5px;
+       transform: rotate(215deg);
+   }
+
+   header div div#Menu span.active:nth-child(2) {
+       display: none;
+   }
+
+   header div div#Menu span.active:nth-child(3) {
+       top: 5px;
+       transform: rotate(-215deg);
+   }
+
+
+   header div span#text {
+       position: absolute;
+       top: 0;
+       left: 22px;
+       width: 39px;
+       display: block;
+       font-family: "Montserrat ExtraBold";
+       font-weight: normal;
+       font-size: 10px;
+       letter-spacing: 0.01em;
+       line-height: 13px;
+       text-align: center;
+       color: #fff;
+   }
+
+   /*============================
+ここまで
+============================*/
+
+   header picture {}
+
+   header picture source {}
+
+   header picture img {}
+
+   /*============================
+#Header-text
+============================*/
+   header div#Header-text {
+       position: absolute;
+       top: 175px;
+       right: 20px;
+       z-index: 50;
+       width: 245px;
+       height: 227px;
+   }
+
+   header div#Header-text p {
+      font-family: YuGothic;
+      font-weight: bold;
+      font-size: 16px;
+      letter-spacing: 0.06em;
+      line-height: 21px;
+      text-align: left;
+      color: #fff;
+   }
+
+   header div#Header-text h1 {
+       font-family: "Montserrat ExtraBold";
+       font-weight: normal;
+       font-size: 56px;
+       letter-spacing: 0.06em;
+       line-height: 53px;
+       text-align: left;
+       color: #fff;
+
+
+   }
+
+   /*============================
+#ハンバーガーと連動
+============================*/
+   header nav {
+       position: fixed;
+       top: 0;
+       left: 0;
+       width: 100%;
+       height: 100%;
+       background: rgba(34, 34, 34, 0.6);
+       z-index: 100;
+       opacity: 0;
+       transition: all .3s;
+   }
+
+   header nav.opacity {
+       opacity: 1;
+   }
+
+   header nav ul {
+       position: absolute;
+       right: 0;
+       width: 520px;
+       height: 100vh;
+       background: rgba(34, 34, 34, 0.95);
+       padding: 180px 200px calc(100vh - 506px);
+       transform: translateX(520px);
+       transition: all .3s;
+   }
+
+   header nav ul.positionX {
+       transform: translateX(0);
+   }
+
+   header nav ul li#menu-logo {
+       width: 118px;
+       height: 52px;
+       padding: 1px;
+   }
+
+   header nav ul li img {
+       display: block;
+       width: 42px;
+       height: 45px;
+       margin: auto;
+   }
+
+   header nav ul li {
+       width: 118px;
+       height: 52px;
+       padding: 1px;
+   }
+
+   header nav ul li a {
+       display: block;
+       height: 24px;
+       font-family: "Montserrat ExtraBold";
+       font-weight: normal;
+       font-size: 20px;
+       letter-spacing: 0.07em;
+       line-height: 24px;
+       text-align: left;
+       color: #fff;
+       white-space: nowrap;
+       margin-top: 29px;
+       text-align: center;
+   }
+
+   /*============================
+ここまで
+============================*/
+
+   main {
+       width: 100%;
+       height: auto;
+       margin: 0 auto;
+   }
+
+   main .content {
+       width: 100%
+   }
+
+   main .content-background-color {
+       background-color: #f0f0f0;
+   }
+
+   /*============================
+#content1
+============================*/
+   main div#content1 {
+       position: relative;
+       width: 100%;
+       height: 541px;
+       margin: 0 auto;
+   }
+
+   main div#content1 #inner-content {
+       position: relative;
+       width: 100%;
+       height: 100%;
+       background-image: url("../imgs/SP-img/about-img.jpg");
+       background-size: cover;
+       margin: 120px auto 0;
+       padding: 1px;
+       z-index: 10;
+   }
+
+   main div#content1 div div {
+       position: absolute;
+       top: 60px;
+       left: calc( ( 100% - 345px )/2 );
+       width: 345px;
+       height: 441px;
+       background: rgba(255, 255, 255, 0.95);
+       padding: 1px 30px;
+   }
+
+   main div#content1 div div h2 {
+       height: 34px;
+       line-height: 34px;
+       margin: 50px 0 30px 0;
+   }
+
+   main div#content1 div div p {
+       height: 211px;
+       line-height: 32px;
+       margin: 0 0 30px 0;
+   }
+
+   main div#content1 div div a {}
+
+   /*============================
+#content2
+============================*/
+   main div#content2 {
+       display: flex;
+       flex-wrap: wrap;
+       justify-content: space-between;
+       width: 100%;
+       height: auto;
+       margin: auto;
+       padding: 40px 15px 1px;
+       z-index: 10;
+   }
+
+   main div#content2 div {
+       width: 345px;
+       height: 408px;
+       margin: 0 auto 60px;
+   }
+
+   main div#content2 div h2 {
+       height: 34px;
+       line-height: 34px;
+       margin: 0 0 30px 0;
+   }
+
+   main div#content2 div picture {}
+
+   main div#content2 div picture source {}
+
+   main div#content2 div picture img {}
+
+   main div#content2 div nav {}
+
+   main div#content2 div nav span {
+       display: block;
+       height: 21px;
+       font-family: YuGothic;
+       font-weight: 500;
+       font-size: 16px;
+       line-height: 21px;
+       text-align: left;
+       color: #333;
+
+       margin: 27px 0 28px 0;
+   }
+
+   main div#content2 div nav a {}
+
+   /*============================
+#content3
+============================*/
+   main div#content3 {
+       width: 345px;
+       height: 348px;
+       margin: 60px auto;
+       padding: 1px 0;
+   }
+
+   main div#content3 h2 {
+       width: 100%;
+   }
+
+   main div#content3 nav {
+       width: 100%;
+       height: 309px;
+       padding: 0;
+       margin: 18px 0 0;
+   }
+
+   main div#content3 nav dl {
+       height: 81px;
+       border-bottom: solid 1px #DDDDDD;
+   }
+
+   main div#content3 nav dl dd {
+       font-family: "Montserrat Medium";
+       font-weight: bold;
+       font-size: 10px;
+       letter-spacing: 0.02em;
+       line-height: 32px;
+       text-align: left;
+       color: #cecece;
+
+   }
+
+   main div#content3 nav dl dt {
+      height: 35px;
+      font-family: YuGothic;
+      font-weight: bold;
+      font-size: 12px;
+      letter-spacing: 0.07em;
+      text-align: left;
+      color: #333;
+
+   }
+
+   main div#content3 nav a {
+       margin: 30px 0 0;
+   }
+
+   /*============================
+#content4
+============================*/
+   main div#content4 {
+       display: flex;
+       flex-wrap: wrap;
+       gap: 0 0;
+       width: 345px;
+       height: 622px;
+       padding: 0;
+       margin: auto;
+   }
+
+   main div#content4 div {
+       width: 100%;
+       height: auto;
+   }
+
+   main div#content4 div:nth-child(1) {
+       order: 2;
+   }
+
+   main div#content4 div:nth-child(2) {
+       order: 1;
+   }
+
+
+   main div#content4 div h2 {
+       margin: 0 0 30px 0;
+       height: 39px;
+       line-height: 39px;
+   }
+
+   main div#content4 div p {
+       height: 150px;
+       line-height: 32px;;
+       margin-bottom: 30px;
+   }
+
+   main div#content4 div a {
+       margin-bottom: 80px;
+   }
+
+   main div#content4 picture {
+       width: 345px;
+       height: auto;
+       margin: 30px 0 30px 0;
+   }
+
+   main div#content4 picture source {}
+
+   main div#content4 picture img {}
+
+   footer {
+       width: 100%;
+       height: 48px;
+       background-color: #525252;
+       padding: 1px;
+   }
+
+   footer p {
+       width: 100%;
+       height: 14px;
+       font-family: "Montserrat Medium";
+       font-weight: 500;
+       font-size: 10px;
+       letter-spacing: 0.02em;
+       line-height: 14px;
+       text-align: center;
+       color: #fff;
+       margin: 17px 0;
+   }
+}

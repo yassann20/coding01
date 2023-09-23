@@ -1,0 +1,488 @@
+@media screen and (min-width:1440px) {
+   main {
+    width: 100%;
+    height: auto;
+}
+
+   main div.content {
+    width: 100%;
+   }
+
+   /*============================
+#content1
+============================*/
+   main div.content div#content1 {
+    width: 680px;
+    height: auto;
+    margin: 120px auto;
+   }
+
+   main div.content div#content1 h2 {
+    height: 39px;
+    font-family: "Montserrat ExtraBold";
+    font-weight: normal;
+    font-size: 32px;
+    letter-spacing: 0.07em;
+    line-height: 39px;
+    text-align: left;
+    color: #333;
+
+   }
+
+   main div.content div#content1 h3 {
+    height: 32px;
+    font-family: YuGothic;
+    font-weight: bold;
+    font-size: 24px;
+    letter-spacing: 0.01em;
+    line-height: 32px;
+    text-align: left;
+    color: #333;
+    margin: 25px 0 27px;
+   }
+
+   main div.content div#content1 p {
+    width: 415px;
+    height: 482px;
+    font-family: "Noto Sans JP Bold";
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 32px;
+    text-align: left;
+    color: #333;
+
+   }
+
+   /*============================
+#content2
+============================*/
+   main div.content div#content2 {
+    width: 1100px;
+    height: 900px;
+    margin: 0 auto;
+   }
+
+   main div.content div#content2 picture {}
+
+   main div.content div#content2 picture source {}
+
+   main div.content div#content2 picture img {}
+
+   main div.content div#content2 div {
+    width: 770px;
+    height: 756px;
+    padding: 120px 185px 90px;
+    background-color: #f0f0f0;
+    margin: -138px 0 0 330px;
+   }
+
+   main div.content div#content2 div h2 {
+    height: 39px;
+    line-height: 39px;
+    margin-bottom: 30px;
+   }
+
+   main div.content div#content2 div p {
+    height: 477px;
+   }
+
+   /*============================
+#content3
+============================*/
+   main div.content div#content3 {
+    width: 1000px;
+    height: auto;
+    margin: 0 auto;
+   }
+
+   main div.content div#content3 h2 {
+    height: 69px;
+    line-height: 39px;
+    padding-bottom: 30px;
+    margin-top: 120px;
+    border-bottom: solid 1px #DDDDDD;
+   }
+
+   /*============================
+#company-data
+============================*/
+   main div.content div#content3 div#company-data {
+    width: 800px;
+    height: auto;
+    margin-left: 200px;
+   }
+
+   main div.content div#content3 div#company-data dl {
+    display: flex;
+    flex-wrap: nowrap;
+    width: 100%;
+    height: 56px;
+    border-bottom: solid 1px #DDDDDD;
+   }
+
+   main div.content div#content3 div#company-data dl dt {
+    width: 144px;
+    font-family: YuGothic;
+    font-weight: bold;
+    font-size: 16px;
+    letter-spacing: 0em;
+    line-height: 56px;
+    text-align: left;
+    color: #333;
+
+   }
+
+   main div.content div#content3 div#company-data dl dd {
+    font-family: YuGothic;
+    font-weight: 500;
+    font-size: 16px;
+    letter-spacing: 0em;
+    line-height: 56px;
+    text-align: left;
+    color: #333;
+
+   }
+
+   /*============================
+#map
+============================*/
+   main div.content div#content3 div#map {
+    width: 100%;
+    height: auto;
+    margin: 0;
+    padding: 1px;
+   }
+   
+   main div.content div#content3 div#map iframe{
+    display: block; 
+    width: 1100px;
+     height: 360px;
+     margin: 39px auto 119px;
+   }
+}
+
+@media screen and (min-width:768px) and (max-width: 1439px) {
+   main {
+     width: 100%;
+     height: auto;
+   }
+
+   main div.content {
+     width: 100%;
+   }
+
+   /*============================
+#content1
+============================*/
+   main div.content div#content1 {
+     width: 408px;
+     height: auto;
+     margin: 120px auto;
+   }
+
+   main div.content div#content1 h2 {
+     height: 39px;
+     font-family: "Montserrat ExtraBold";
+     font-weight: normal;
+     font-size: 32px;
+     letter-spacing: 0.07em;
+     line-height: 39px;
+     text-align: left;
+     color: #333;
+
+   }
+
+   main div.content div#content1 h3 {
+     height: 32px;
+     font-family: YuGothic;
+     font-weight: bold;
+     font-size: 24px;
+     letter-spacing: 0.01em;
+     line-height: 32px;
+     text-align: left;
+     color: #333;
+     margin: 25px 0 27px;
+   }
+
+   main div.content div#content1 p {
+     width: 415px;
+     height: 482px;
+     font-family: "Noto Sans JP Bold";
+     font-weight: normal;
+     font-size: 16px;
+     line-height: 32px;
+     text-align: left;
+     color: #333;
+
+   }
+
+   /*============================
+#content2
+============================*/
+   main div.content div#content2 {
+     width: 708px;
+     height: 818px;
+     margin: 0 auto;
+   }
+
+   main div.content div#content2 picture {}
+
+   main div.content div#content2 picture source {}
+
+   main div.content div#content2 picture img {}
+
+   main div.content div#content2 div {
+     width: 494px;
+     height: 687px;
+     padding: 110px 40px 80px;
+     background-color: #f0f0f0;
+     margin: -85px 0 0 214px;
+   }
+
+   main div.content div#content2 div h2 {
+     height: 39px;
+     line-height: 39px;
+     margin-bottom: 30px;
+   }
+
+   main div.content div#content2 div p {
+     height: 477px;
+   }
+
+   /*============================
+#content3
+============================*/
+   main div.content div#content3 {
+     width: 708px;
+     height: auto;
+     margin: 0 auto;
+   }
+
+   main div.content div#content3 h2 {
+     height: 69px;
+     line-height: 39px;
+     padding-bottom: 30px;
+     margin-top: 82px;
+     border-bottom: solid 1px #DDDDDD;
+   }
+
+   /*============================
+#company-data
+============================*/
+   main div.content div#content3 div#company-data {
+     width: 100%;
+     height: auto;
+   }
+
+   main div.content div#content3 div#company-data dl {
+     display: flex;
+     flex-wrap: nowrap;
+     width: 100%;
+     height: 56px;
+     border-bottom: solid 1px #DDDDDD;
+   }
+
+   main div.content div#content3 div#company-data dl dt {
+     width: 144px;
+     font-family: YuGothic;
+     font-weight: bold;
+     font-size: 16px;
+     letter-spacing: 0em;
+     line-height: 56px;
+     text-align: left;
+     color: #333;
+
+   }
+
+   main div.content div#content3 div#company-data dl dd {
+     font-family: YuGothic;
+     font-weight: 500;
+     font-size: 16px;
+     letter-spacing: 0em;
+     line-height: 56px;
+     text-align: left;
+     color: #333;
+
+   }
+
+   /*============================
+#map
+============================*/
+   main div.content div#content3 div#map {
+     width: 100%;
+     height: auto;
+     margin: 0;
+     padding: 1px;
+   }
+
+   main div.content div#content3 div#map iframe {
+     display: block;
+     width: 708px;
+     height: 230px;
+     margin: 39px auto 79px;
+   }
+}
+
+@media screen and (min-width:0) and (max-width: 767px) {
+main {
+  width: 100%;
+  height: auto;
+}
+
+main div.content {
+  width: 100%;
+}
+
+/*============================
+#content1
+============================*/
+main div.content div#content1 {
+  width: 345px;
+  height: auto;
+  margin: 80px auto;
+}
+
+main div.content div#content1 h2 {
+  height: 39px;
+  font-family: "Montserrat ExtraBold";
+  font-weight: normal;
+  font-size: 32px;
+  letter-spacing: 0.07em;
+  line-height: 39px;
+  text-align: left;
+  color: #333;
+
+}
+
+main div.content div#content1 h3 {
+  height: 32px;
+  font-family: "noto-sans-cjk-jp", sans-serif;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 32px;
+  text-align: left;
+  color: #333;
+  margin: 32px 0px;
+}
+
+main div.content div#content1 p {
+  width: 345px;
+  height: 418px;
+  font-family: "noto-sans-cjk-jp", sans-serif;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 28px;
+  text-align: left;
+  color: #333;
+
+}
+
+/*============================
+#content2
+============================*/
+main div.content div#content2 {
+  width: 375px;
+  height: 928px;
+  margin: 0 auto;
+}
+
+main div.content div#content2 picture {}
+
+main div.content div#content2 picture source {}
+
+main div.content div#content2 picture img {}
+
+main div.content div#content2 div {
+  width: 345px;
+  height: 799px;
+  padding: 125px 28px 80px;
+  background-color: #f0f0f0;
+  margin: -100px auto 0 auto;
+}
+
+main div.content div#content2 div h2 {
+  height: 38px;
+  line-height: 38px;
+  margin-bottom: 30px;
+}
+
+main div.content div#content2 div p {
+  width: 288px;
+  height: 525px;
+}
+
+/*============================
+#content3
+============================*/
+main div.content div#content3 {
+  width: 345px;
+  height: auto;
+  margin: 0 auto;
+}
+
+main div.content div#content3 h2 {
+  height: 69px;
+  line-height: 39px;
+  padding-bottom: 30px;
+  margin-top: 82px;
+  border-bottom: solid 1px #DDDDDD;
+}
+
+/*============================
+#company-data
+============================*/
+main div.content div#content3 div#company-data {
+  width: 100%;
+  height: auto;
+}
+
+main div.content div#content3 div#company-data dl {
+  display: flex;
+  flex-wrap: nowrap;
+  width: 100%;
+  height: 60px;
+  border-bottom: solid 1px #DDDDDD;
+}
+
+main div.content div#content3 div#company-data dl dt {
+  width: 163px;
+  font-family: "noto-sans-cjk-jp", sans-serif;
+  font-weight: normal;
+  font-size: 14px;
+  letter-spacing: 0em;
+  line-height: 60px;
+  text-align: left;
+  color: #333;
+
+
+}
+
+main div.content div#content3 div#company-data dl dd {
+font-family: "noto-sans-cjk-jp", sans-serif;
+font-weight: normal;
+font-size: 14px;
+letter-spacing: 0em;
+line-height: 60px;
+text-align: left;
+color: #333;
+
+
+}
+
+/*============================
+#map
+============================*/
+main div.content div#content3 div#map {
+  width: 100%;
+  height: auto;
+  margin: 0;
+  padding: 1px;
+}
+
+main div.content div#content3 div#map iframe {
+  display: block;
+  width: 345px;
+  height: 470px;
+  margin: 39px auto 79px;
+}
+}

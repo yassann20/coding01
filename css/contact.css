@@ -1,0 +1,207 @@
+@media screen and (min-width:1440px) {
+    main h2 {
+        height: 21px;
+        font-family: "Noto Sans JP Bold";
+        font-weight: normal;
+        font-size: 16px;
+        letter-spacing: 0em;
+        line-height: 21px;
+        text-align: left;
+        color: #333;
+
+    }
+    main p{
+        
+    }
+    main {
+        width: 100%;
+        height: auto;
+    }
+
+    main div {
+        width: 700px;
+        margin: auto;
+    }
+
+    main div form {}
+
+    main div form p {
+        width: 700px;
+        height: 53px;
+        font-family: "Noto Sans JP";
+        font-weight: normal;
+        font-size: 16px;
+        letter-spacing: 0em;
+        line-height: 24px;
+        text-align: left;
+        color: #333;
+        margin: 120px 0 0 0;
+    }
+
+    main div form label {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        height: auto;
+        margin: 52px 0 0 0;
+    }
+
+    main div form label div{
+         display: flex;
+         flex-wrap: nowrap;
+         align-items: center;
+        width: 100%;
+        height: 21px;
+        margin-bottom: 18px;
+    }
+
+    main div form label div h2 {
+        height: 21px;
+        line-height: 21px;
+        text-align: left;
+    }
+
+    main div form label div span {
+        display: block;
+         width: 34px;
+         height: 18px;
+         font-family: "Noto Sans JP Bold";
+         font-weight: normal;
+         font-size: 12px;
+         letter-spacing: 0em;
+         line-height: 18px;
+         text-align: center;
+         color: #fff;
+         background-color: #333333;
+         margin-left: 30px;
+    }
+
+    main div form label input[type="radio"]{
+        display: block;
+          width: 20px;
+          height: 20px;
+    }
+
+       main div form label input[type="radio"]:nth-child(1){
+        margin-left: 30px;
+    }
+
+    main div form label span {
+        font-family: YuGothic;
+        font-weight: 500;
+        font-size: 16px;
+        letter-spacing: 0em;
+        line-height: 21px;
+        text-align: left;
+        color: #333;
+        margin: 0 50px 0 10px;
+
+    }
+
+    main div form label input[type="text"]{
+        display: block;
+        width: 700px;
+        height: 41px;
+        background: #fff;
+        border: 1px solid #333;
+        margin: 8px 0 0 0;
+    }
+
+    main div form label textarea {}
+
+    main div div {}
+
+    main div div h2 {}
+
+    main div div div {
+        width: 100%;
+        height: 252px;
+        background: #fff;
+        border: 1px solid #333;
+
+        overflow: scroll;
+    }
+
+    main div div div p {}
+
+    main div div label {}
+
+    main div div label input {}
+
+    main div div label span {}
+
+}
+
+@media screen and (min-width:768px) and (max-width: 1439px) {
+   main {}
+
+   main div {}
+
+   main div form {}
+
+   main div form p {}
+
+   main div form label {}
+
+   main div form label h2 {}
+
+   main div form label h2 span {}
+
+   main div form label input {}
+
+   main div form label span {}
+
+   main div form label textarea {}
+
+   main div div {}
+
+   main div div h2 {}
+
+   main div div div {}
+
+   main div div div p {}
+
+   main div div label {}
+
+   main div div label input {}
+
+   main div div label span {}
+
+}
+
+@media screen and (min-width:0) and (max-width: 767px) {
+   main {}
+
+   main div {}
+
+   main div form {}
+
+   main div form p {}
+
+   main div form label {}
+
+   main div form label h2 {}
+
+   main div form label h2 span {}
+
+   main div form label input {}
+
+   main div form label span {}
+
+   main div form label textarea {}
+
+   main div div {}
+
+   main div div h2 {}
+
+   main div div div {}
+
+   main div div div p {}
+
+   main div div label {}
+
+   main div div label input {}
+
+   main div div label span {}
+
+}
